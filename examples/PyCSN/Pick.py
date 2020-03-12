@@ -192,7 +192,7 @@ def test_pick_orientation_with_verbose_output():
         last_quench = timestamp if new_quench else last_quench
         # return filter condition (new_quench) and next state (last_quench)
         return new_quench, last_quench
-    filter_element(f, picks, quenched_picks, state = 0, QUENCH_PERIOD=2)
+    filter_element(f, picks, quenched_picks, state=0, QUENCH_PERIOD=2)
 
     # Send quenched picks.
     send_event(quenched_picks, orientation='n')
